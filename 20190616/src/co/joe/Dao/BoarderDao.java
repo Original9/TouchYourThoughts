@@ -65,6 +65,7 @@ public class BoarderDao extends Dao {
 		BoarderDto dto = new BoarderDto();
 		String sql="select * from boarder where bnum = ?";
 		try {
+			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, key);
 			rs = pstmt.executeQuery();
